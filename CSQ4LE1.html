@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Little Phony</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <style>
+            @font-face {
+                font-family: Equestria;
+                src: url(Equestria.otf);
+            }
+
+            div {
+                font-family: Equestria;
+            }
+            #Add{
+                text-align: right;
+                color: black;
+            }
+            #btnAdd{
+                padding: 2px 2px 0px 2px;
+                padding-bottom: 0px;
+                margin-top: 0.5vw;
+                border-color: deeppink;
+                border-width: 3px;
+            }
+            #Find {
+                margin-top: 2vw;
+                font-size: 2vw;
+            }
+            #FindFriend, #btnAdd{
+                background-color: deeppink;
+                color: white;
+            }
+            #FindFriend{
+                font-size: 3vw;
+            }
+            #btnSearch{
+                background-color: deeppink;
+                color: white;
+                border-left-width: 2px;
+                border-right-width: 3px;
+                border-top-width: 3px;
+                border-bottom-width: 3px;
+                border-color: deeppink;
+                font-size: 3vw;
+            }
+            .list-group{
+                margin-bottom:2vw;
+                color: rebeccapurple;
+            }
+            #NewFriend{
+                background-color: #ffcfea;
+            }
+            .input-group-text{
+                border-right-width: 2px;
+                border-left-width: 3px;
+                border-bottom-width: 3px;
+                border-top-width: 3px;
+                border-color: deeppink;
+            }
+            .list-group-item{
+                color: rebeccapurple;
+                border-color: deeppink;
+                border-width: 3px;
+                background-color: lightyellow;
+            }
+            .form-control{
+                border-color: deeppink;
+                border-radius: 2vw;
+                border-width: 3px;
+            }
+            h1{
+                font-size: 6vw;
+            }
+            h2{
+                font-size: 5vw;
+                margin: auto;
+            }
+            #btnAdd{
+                margin-bottom: 2px;
+                font-size: 2.5vw;
+                padding-left: 1vw;
+                padding-right: 1vw;
+            }
+            body{
+                background-image: url(https://images.unsplash.com/photo-1604937455095-ef2fe3d46fcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+                background-repeat: repeat;
+                background-size: cover;
+                color: rebeccapurple;
+                font-size: 3vw;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>My Little Phony</h1>
+            <form method="Post">
+                <div id="Find">
+                <div class="input-group mb-4">
+                    <label class="input-group-text" for="ponyname" id="FindFriend">Find a Friend! </label>
+                    <input type="text" class="form-control" id="ponyname">
+                    <button class="btn btn-outline-secondary" type="button" id="btnSearch" onclick="">Search</button>
+                </div>
+                </div>
+                <ul class="list-group">
+                        <li class="list-group-item">Twilight Sparkle</li>
+                        <li class="list-group-item">Pinky Pie</li>
+                        <li class="list-group-item">Apple Jack</li>
+                        <li class="list-group-item" id="NewFriend">Add a new friend</li>
+                </ul>
+                <div class="row">
+                    <div class="col">
+                        <h2> Details </h2>
+                    </div>
+                    <div class="col" id="Add">
+                        <button class="btn Add" type="button" id="btnAdd">Add</button>
+                    </div>
+                <div class="my-3">
+                    <label for="txtfriend'sname" class="form-label">Friend's Name: </label> 
+                    <input type="text" name="friend'sname" id="txtfriend'sname" class="form-control">
+                </div>
+                <div class="my-3">
+                    <label for="txtemailaddress" class="form-label">Email Address:</label>
+                    <input id="txtemailaddress" class="form-control" type="text" name="emailaddress">
+                </div>
+                <div class="my-3">
+                    <label for="telnumber" class="form-label">Phone Number:</label>
+                    <input id="telnumber" class="form-control" type="tel" name="number">
+                </div>
+                <div class="my-3">
+                    <label for=address class="form-label">Address:</label>
+                    <input id="address" class="form-control" type="text" name="address">
+                </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
